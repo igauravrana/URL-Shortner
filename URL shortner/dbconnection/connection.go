@@ -11,7 +11,7 @@ import (
 var DB *sql.DB
 
 func Connect() {
-	connect := "postgres://postgres:gaurav@localhost:5432/urlshortner?sslmode=disable"
+	connect := "postgres://postgres:<your_password>@localhost:5432/urlshortner?sslmode=disable"
 
 	var err error
 	DB, err = sql.Open("postgres", connect)
